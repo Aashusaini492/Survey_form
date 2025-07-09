@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main id="main">
+    <div id="form-view">
+     <h1 id="title"><a href="http://www.htmlbestcodes.com">Survay form</a></h1>
+    </div>
+    <div id="survey-form-view">
+      <form id="survey-form">
+        <div>
+        <label id="name-label" for="name">Name:</label><br /><br />
+        <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div>
+        <label id="email-label" for="email">Email:</label><br /><br />
+        <input id="email" type="email" placeholder="Enter your email" required/>
+        </div>
+        <div>
+        <label id="number-label" for="number">Age:</label><br /><br />
+        <input id="number" type="number" placeholder="Enter your age (optional)" min="1" max="150" required/>
+        </div>
+        <div>
+        <label for="dropdown">Which option best describes your current role?</label><br /><br />
+        <select id="dropdown">
+          <option value="role">Select a current role</option>
+          <option value="student">Student</option>
+          <option value="fulltimejob">Full Time Job</option>
+          <option value="fulltimelearner">Full Time Learner</option>
+          <option value="prefernottosay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+
+      </div>
+        <div>
+        <label>Would you recommend htmlbestcodes to a friend?</label><br /><br />
+        <input id="definitely" type="radio" name="recommendation" value="definitely"/>
+        <label for="definitely">Definitely</label><br />
+        <input id="maybe" type="radio" name="recommendation" value="maybe"/>
+        <label for="maybe">Maybe</label><br />
+        <input id="notsure" type="radio" name="recommendation" value="notsure"/>
+        <label for="notsure">Not Sure</label><br />
+        </div>
+        <div>
+        <label>What would you like to see improved? (Check all that apply)</label><br /><br />
+        <input id="frontendprojects" type="checkbox" name="improvement" value="frontendprojects"/>
+        <label for="frontendprojects">Front-end Projects</label><br />
+        <input id="backendprojects" type="checkbox" name="improvement" value="backendprojects"/>
+        <label for="backendprojects">Back-end Projects</label><br />
+        <input id="datavisualization" type="checkbox" name="improvement" value="datavisualization"/>
+        <label for="datavisualization">Data Visualization</label><br />
+        <input id="challenges" type="checkbox" name="improvement" value="challenges"/>
+        <label for="challenges">Challenges</label><br />
+        <input id="opensourcecommunity" type="checkbox" name="improvement" value="opensourcecommunity"/>
+        <label for="challenges">Open Source Community</label><br />
+        </div>
+        <div>
+        <label id="textarea-label" for="textarea">Any comments or suggestions?</label><br /><br />
+        <textarea id="textarea" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div>
+          <button id="submit" type="submit" >Submit</button>
+          
+        </div>
+      </form>
+      <div id="confirmation" class="hidden">
+        <p><i class="fa fa-check-circle"></i> Form submitted successfully!</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    </div>
+  </main>
+  
+</body>
+</html>
